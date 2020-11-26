@@ -50,11 +50,11 @@ class _AuthPageState extends State<AuthPage> with SingleTickerProviderStateMixin
         child: Column(
           children: [
             Spacer(),
-            Text("Complaint Management",style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-              color: Colors.white
-            ),),
+            MediaQuery.of(context).viewInsets.bottom ==0? Text("Complaint Management",style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.white
+            ),): Container(),
             SizedBox(
               height: 40,
             ),
