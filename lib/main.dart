@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:fypapp/pages/AuthPage.dart';
 import 'package:fypapp/pages/homePage.dart';
@@ -12,14 +11,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-        fontFamily: "RobotMono"
-      ),
-      home: AuthPage(),
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+          fontFamily: "RobotMono"),
+      home: HomePage(),
       routes: {
-        HomePage.ROUTE:(context)=>HomePage(),
-        AuthPage.ROUTE:(context)=>AuthPage(),
+        HomePage.ROUTE: (context) => HomePage(),
+        AuthPage.ROUTE: (context) => AuthPage(),
       },
     );
   }
