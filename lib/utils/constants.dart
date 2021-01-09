@@ -5,7 +5,7 @@ import 'package:fypapp/models/usermodel.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Constants {
-  static const String baseUrl = "http://192.168.1.113:3000/";
+  static const String baseUrl = "http://192.168.1.105:3000/";
   static const String _SESSION_KEY = "session";
   // Theme Data
   static const DarkPrimary = 0xf303F9F;

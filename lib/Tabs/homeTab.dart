@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:fypapp/utils/constants.dart';
 import 'package:fypapp/widgets/ServiceItemCard.dart';
 
 class HomeTab extends StatefulWidget {
@@ -52,9 +53,8 @@ class _HomeTabState extends State<HomeTab> {
                       padding: EdgeInsets.only(left: 10),
                     ),
                     SizedBox(
-                      height: 25,
+                      height: 20,
                     ),
-
                     Container(
                       padding: EdgeInsets.symmetric(horizontal: 10),
                       alignment: Alignment.center,
@@ -62,12 +62,12 @@ class _HomeTabState extends State<HomeTab> {
                         "Instant digital access to many services, all in one place",
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                            fontSize: 18,
+                            fontSize: 16,
                             color: Colors.white,
                             fontWeight: FontWeight.bold),
                       ),
                     ),
-                    SizedBox(height: 25),
+                    SizedBox(height: 20),
                     Card(
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10)),
@@ -137,7 +137,7 @@ class _HomeTabState extends State<HomeTab> {
                       child: Text("Trending on",
                           style: TextStyle(
                               color: Colors.black87,
-                              fontSize: 18,
+                              fontSize: 16,
                               fontWeight: FontWeight.bold)),
                       alignment: Alignment.centerLeft,
                     ),
@@ -168,7 +168,7 @@ class _HomeTabState extends State<HomeTab> {
                           Text("All Services",
                               style: TextStyle(
                                   color: Colors.black87,
-                                  fontSize: 18,
+                                  fontSize: 16,
                                   fontWeight: FontWeight.bold)),
                           Spacer(),
                           Text("More",style: TextStyle(color: Colors.blue),)
@@ -181,12 +181,6 @@ class _HomeTabState extends State<HomeTab> {
                         ServicesItemCard(),
                       ],
                     ),
-                    Row(
-                      children: [
-                        ServicesItemCard(),
-                        ServicesItemCard(),
-                      ],
-                    )
                   ],
                 ),
               ))
@@ -217,7 +211,7 @@ class _NewsCard extends StatelessWidget {
           ),
           Text(
             "Government Announce tex on Electricity",
-            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+            style: TextStyle(color: Colors.white,fontSize: 12, fontWeight: FontWeight.bold),
           ),
           Spacer(),
           Row(
