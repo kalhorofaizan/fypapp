@@ -32,10 +32,21 @@ class Services {
       String name, String number, context) async {
     var res = await _request('user',
         {'email': email, 'password': password, 'name': name, 'number': number});
+    print(res);
     if (res['result'] == false) {
       return res;
     } else {
       return {'result': true, 'data': UserModel.parseMap(res['data'])};
     }
   }
+  static Future<Map<dynamic, dynamic>> userData( context) async {
+    // var res = await _request('',);
+    // if (res['result'] == false) {
+    //   return res;
+    // } else {
+    //   return {'result': true, 'data': UserModel.parseMap(res['data'])};
+    // }
+  }
+
+
 }

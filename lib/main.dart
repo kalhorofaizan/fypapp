@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:fypapp/pages/AuthPage.dart';
+import 'package:fypapp/pages/CompanyInfo.dart';
+import 'package:fypapp/pages/ComplaintList.dart';
+import 'package:fypapp/pages/complaintPage.dart';
+import 'package:fypapp/pages/editProfilePage.dart';
 import 'package:fypapp/pages/homePage.dart';
 
 void main() {
@@ -17,7 +21,11 @@ class MyApp extends StatelessWidget {
       home: HomePage(),
       routes: {
         HomePage.ROUTE: (context) => HomePage(),
+        ComplaintPage.ROUTE: (context) => ComplaintPage(),
         AuthPage.ROUTE: (context) => AuthPage(),
+        CompanyInfo.ROUTE:(context)=>CompanyInfo(),
+        EditProfilePage.ROUTE:(context)=>EditProfilePage(),
+        ComplaintListPage.ROUTE:(context)=>ComplaintListPage()
       },
     );
   }

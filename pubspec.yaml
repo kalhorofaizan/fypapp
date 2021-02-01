@@ -32,6 +32,7 @@ dependencies:
   carousel_slider: ^2.3.1
   google_maps_flutter: ^0.4.0
   geolocator: ^6.1.13
+  flutter_rating_bar: ^3.2.0+1
 dev_dependencies:
   flutter_test:
     sdk: flutter
